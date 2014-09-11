@@ -1,0 +1,29 @@
+{
+  "name": "bootstrap-5-columns",
+  "version": "0.1.0",
+  "description": "Bootstrap five columns layout",
+  "main": "bootstrap-5-columns.css",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/kennyki/bootstrap-5-columns.git"
+  },
+  "keywords": [
+    "bootstrap",
+    "grid",
+    "5",
+    "columns",
+    "five",
+    "columns"
+  ],
+  "author": "Kenny Ki",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/kennyki/bootstrap-5-columns/issues"
+  },
+  "homepage": "https://github.com/kennyki/bootstrap-5-columns",
+  "devDependencies": {
+    "grunt": "^0.4.5",
+    "grunt-contrib-cssmin": "^0.10.0",
+    "grunt-contrib-less": "^0.11.4"
+  }
+}

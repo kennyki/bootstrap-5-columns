@@ -1,0 +1,31 @@
+{
+  "name": "bootstrap-5-columns",
+  "version": "0.1.0",
+  "authors": [
+    "Kenny Ki <knyki.12@gmail.com>"
+  ],
+  "description": "Bootstrap five columns layout",
+  "main": [
+    "less/bootstrap-5-columns.less",
+    "dist/bootstrap-5-columns.css"
+  ],
+  "keywords": [
+    "bootstrap",
+    "grid",
+    "five",
+    "columns",
+    "5-columns"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/kennyki/bootstrap-5-columns",
+  "ignore": [
+    "/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "devDependencies": {
+    "bootstrap": "~3.2.0"
+  }
+}
