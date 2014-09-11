@@ -4,6 +4,15 @@
 @grid-columns: 5;
 
 .make-grid(xs-5th);
-.make-grid(sm-5th);
-.make-grid(md-5th);
-.make-grid(lg-5th);
+
+@media (min-width: @screen-sm-min) {
+  .make-grid(sm-5th);
+}
+
+@media (min-width: @screen-md-min) {
+  .make-grid(md-5th);
+}
+
+@media (min-width: @screen-lg-min) {
+  .make-grid(lg-5th);
+}
