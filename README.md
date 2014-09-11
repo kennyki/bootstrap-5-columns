@@ -4,6 +4,8 @@ Bootstrap five columns layout. This is inspired by this [SO answer](http://stack
 
 Furthermore when you really need a 5 columns layout, you'll need all the `offset`, `pull`, `push` classes as well. A quick look at the source code reveals that I can achieve that easily with what you can see in `./less/bootstrap-5-columns.less`.
 
+View the [demo](http://plnkr.co/edit/fNsbcY?p=preview)!
+
 ## Instructions
 
 1. Install with bower: `bower install bootstrap-5-columns`
