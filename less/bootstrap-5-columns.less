@@ -1,7 +1,34 @@
 @import "../bower_components/bootstrap/less/variables.less";
 @import "../bower_components/bootstrap/less/mixins/grid-framework.less";
 
+// CUSTOMIZATION: adapted from grid-framework.less .make-grid-columns
+// adding '-5th' to the generated class name
+.make-5th-grid-columns() {
+  // Common styles for all sizes of grid columns, widths 1-12
+  .col(@index) { // initial
+    @item: ~".col-xs-5th-@{index}, .col-sm-5th-@{index}, .col-md-5th-@{index}, .col-lg-5th-@{index}";
+    .col((@index + 1), @item);
+  }
+  .col(@index, @list) when (@index =< @grid-columns) { // general; "=<" isn't a typo
+    @item: ~".col-xs-5th-@{index}, .col-sm-5th-@{index}, .col-md-5th-@{index}, .col-lg-5th-@{index}";
+    .col((@index + 1), ~"@{list}, @{item}");
+  }
+  .col(@index, @list) when (@index > @grid-columns) { // terminal
+    @{list} {
+      position: relative;
+      // Prevent columns from collapsing when empty
+      min-height: 1px;
+      // Inner gutter via padding
+      padding-left:  (@grid-gutter-width / 2);
+      padding-right: (@grid-gutter-width / 2);
+    }
+  }
+  .col(1); // kickstart it
+}
+
 @grid-columns: 5;
+
+.make-5th-grid-columns();
 
 .make-grid(xs-5th);
 
