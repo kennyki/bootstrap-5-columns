@@ -1,10 +1,10 @@
 {
   "name": "bootstrap-5-columns",
-  "version": "0.1.1",
+  "version": "0.2.0",
   "authors": [
     "Kenny Ki <knyki.12@gmail.com>"
   ],
-  "description": "Bootstrap five columns layout",
+  "description": "Bootstrap five columns layout. Compatible with Bootstrap >= 3.2.0",
   "main": [
     "less/bootstrap-5-columns.less",
     "dist/bootstrap-5-columns.css"
@@ -26,6 +26,6 @@
     "tests"
   ],
   "devDependencies": {
-    "bootstrap": "~3.2.0"
+    "bootstrap": "~3.3.2"
   }
 }
